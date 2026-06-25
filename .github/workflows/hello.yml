@@ -16,10 +16,10 @@ jobs:
         run: date
 
       - name: print the current branch name
-        run: echo "Current branch: ${{ github.ref_name }}"
+        run: 'echo "Current branch: ${{ github.ref_name }}"'
       
       - name: list files in the repository
         run: ls -la
       
       - name: print the runner operating system
-        run: echo "Runner OS: ${{ runner.os }}"
+        run: 'echo "Runner OS: ${{ runner.os }}"'
