@@ -1,25 +1,25 @@
-name: Hello
-on:
-  push:
+# name: Hello
+# on:
+#   push:
     
-jobs:
-  greet:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout code
-        uses: actions/checkout@v3
+# jobs:
+#   greet:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: checkout code
+#         uses: actions/checkout@v3
       
-      - name: print hello message
-        run: echo "Hello from GitHub Actions!"
+#       - name: print hello message
+#         run: echo "Hello from GitHub Actions!"
       
-      - name: Print the current date and time
-        run: date
+#       - name: Print the current date and time
+#         run: date
 
-      - name: print the current branch name
-        run: 'echo "Current branch: ${{ github.ref_name }}"'
+#       - name: print the current branch name
+#         run: 'echo "Current branch: ${{ github.ref_name }}"'
       
-      - name: list files in the repository
-        run: ls -la
+#       - name: list files in the repository
+#         run: ls -la
       
-      - name: print the runner operating system
-        run: 'echo "Runner OS: ${{ runner.os }}"'
+#       - name: print the runner operating system
+#         run: 'echo "Runner OS: ${{ runner.os }}"'
