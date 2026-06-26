@@ -12,7 +12,7 @@ jobs:
     
       steps:
        - name: Checkout Repository
-         uses: actions/chckout@v7
+         uses: actions/checkout@v7
        - name: Set up Python ${{ matrix.python-version }}
          uses: actions/setup-python@v6
          with:
