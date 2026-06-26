@@ -1,0 +1,17 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  schedule_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Schedule Job Running
+        run: |
+          echo "Schedule job running at $(date)"
